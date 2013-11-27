@@ -1,0 +1,781 @@
+@charset "utf-8";
+* { box-sizing: border-box; padding:0; margin: 0; }
+
+body {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  color:white;
+  font-size:12px;
+  background:#f3c9f3;
+  width: 1340px;
+}
+#bodycontent{
+    position: relative;
+  z-index: 2;
+}
+#contain{
+        z-index: 0;
+	background-size:1340px auto;
+	width:100%;
+	height:700px;
+	position:fixed;
+	opacity:0.7;
+	margin-top:-30px;
+        
+}
+#batimg2{
+    z-index: 1;
+	opacity:0.35;
+	position:fixed;
+	margin-left:84em;
+	margin-top:28em;
+	-webkit-transform:rotate(-50deg) scale(1,1);
+    -moz-transform:rotate(-50deg) scale(1,1);
+     transform:rotate(-50deg) scale(1,1);
+}
+#batimg1{
+    z-index: 1;
+	opacity:0.35;
+	position:fixed;
+	margin-left:-8em;
+	margin-top:28em;
+	-webkit-transform:rotate(50deg) scale(1,1);
+    -moz-transform:rotate(50deg) scale(1,1);
+     transform:rotate(50deg) scale(1,1);
+}
+
+@font-face{ font-family:Zeyada;src:url(../fonts/Zeyada.ttf);}
+@font-face{ font-family:Kristi;	src:url(../fonts/Kristi.ttf);}
+@font-face{ font-family:"Bad Script";src:url(../fonts/BadScript-Regular.ttf);}
+@font-face{ font-family:"Berkshire Swash";src:url(../fonts/BerkshireSwash-Regular.ttf);}
+@font-face{ font-family:"Bilbo Swash Caps";src:url(../fonts/BilboSwashCaps-Regular.ttf);}
+@font-face{ font-family:Condiment;src:url(../fonts/Condiment-Regular.ttf);}
+@font-face{ font-family:"Jim Nightshade";src:url(../fonts/JimNightshade-Regular.ttf);}
+@font-face{ font-family:"Just Me Again Down Here";src:url(../fonts/JustMeAgainDownHere.ttf);}
+@font-face{ font-family:"Kaushan Script";src:url(../fonts/KaushanScript-Regular.ttf);}
+@font-face{ font-family:"Marck Script";src:url(../fonts/MarckScript-Regular.ttf);}
+@font-face{ font-family:"Meie Script";src:url(../fonts/MeieScript-Regular.ttf);}
+@font-face{ font-family:"Nothing You Could Do";src:url(../fonts/NothingYouCouldDo.ttf);}
+@font-face{ font-family:"Over the Rainbow";src:url(../fonts/OvertheRainbow.ttf);}
+@font-face{ font-family:Satisfy;src:url(../fonts/Satisfy-Regular.ttf);}
+@font-face{ font-family:"Shadows Into Light";src:url(../fonts/ShadowsIntoLight.ttf);}
+@font-face{ font-family:"Swanky and Moo Moo";src:url(../fonts/SwankyandMooMoo.ttf);}
+@font-face{ font-family:"The Girl Next Door";src:url(../fonts/TheGirlNextDoor.ttf);}
+@font-face{ font-family:Yesteryear;src:url(../fonts/Yesteryear-Regular.ttf);}
+@font-face{ font-family:"KreepshowFrigid";src:url(../fonts/KreepshowFrigid.ttf);}
+
+/* menu */
+
+#toptabmenu {
+        margin-top: 1em;
+	width: 1010px;
+	height: 50px;
+	padding: 0 0px;
+        background-color:#ffc163;
+}
+
+#toptabmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#toptabmenu ul li{
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+        width:fit-content;
+}
+
+#toptabmenu ul li a {
+    
+	float: left;
+	display: block;
+	
+	height: 50px;
+        line-height: 50px;
+	padding: 0px 30px 0 0;
+        font-family: "KreepshowFrigid";
+	margin: 0 5px 0 0 ;
+	font-size: 29px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;	
+	outline: none;
+        border-left: medium solid #b80af9;
+}
+
+#toptabmenu ul li a:hover, #toptabmenu ul li .current {
+	color: #fff;
+        background: linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+       
+}
+
+.mainbox {
+  background:rgba(1,1,1,0.8);
+  margin:0px auto;
+  border-radius:0.4em;
+  border:1px solid #191919;
+  overflow:hidden;
+  position:relative;
+  box-shadow: 0 5px 15px 5px #fa0707;
+}
+
+.mainbox:after {
+  content:"";
+  display:block;
+  position:absolute;
+  height:1px;
+  width:100px;
+  left:20%;
+  background:linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+  top:0;
+}
+
+.mainbox:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:8px;
+  height:5px;
+  border-radius:50%;
+  left:34%;
+  top:-7px;
+  box-shadow: 0 0 12px 8px #fff;
+}
+
+.mainbox h1{
+  font-family:"Marck Script", cursive;
+  color:#99ffff;
+  font-size: 55px;
+  color:#f0ac17;
+  text-shadow:0 0.2px 0 cyan;
+  text-align:center;
+  position:relative;
+}
+
+.mainbox h1:after {
+ 	content:"";
+  width:800px;
+  height:100px;
+  position:absolute;
+  top:0;
+  left:0px;
+  pointer-events:none;
+  transform:rotate(70deg);
+  -webkit-transform:rotate(70deg);
+  background:linear-gradient(50deg, rgba(255,255,255,0.25), rgba(0,0,0,0));
+  
+}
+
+
+.logmainbox {
+  background:silver;
+  width:300px;
+  margin:8em auto;
+  border-radius:0.4em;
+  border:1px solid #191919;
+  overflow:hidden;
+  position:relative;
+  box-shadow: 0 5px 15px 5px #00ff00;
+}
+
+.logmainbox:after {
+  content:"";
+  display:block;
+  position:absolute;
+  height:1px;
+  width:100px;
+  left:20%;
+  background:linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+  top:0;
+  }
+
+.logmainbox:before {
+ 	content:"";
+  display:block;
+  position:absolute;
+  width:8px;
+  height:5px;
+  border-radius:50%;
+  left:34%;
+  top:-7px;
+  box-shadow: 0 0 20px 15px #FFF;
+}
+
+.loginset {
+ 	padding:20px; 
+  border-top:1px solid #19191a;
+}
+
+.logmainbox h1 {
+  font-family:"Jim Nightshade", cursive;
+  font-size: 39px;
+  color:#990000;
+  text-shadow:0 0.4px 0 gold;
+  text-align:center;
+  border-bottom:1px solid rgba(1,0,0,1);
+  position:relative;
+}
+
+.logmainbox h1:after {
+ 	content:"";
+  width:800px;
+  height:100px;
+  position:absolute;
+  top:0;
+  left:-230px;
+  pointer-events:none;
+  transform:rotate(70deg);
+  -webkit-transform:rotate(70deg);
+  background:linear-gradient(50deg, rgba(255,255,255,0.55), rgba(204,204,204,0));
+  
+}
+
+
+.Ltext {
+    color:darkmagenta;
+        font-size: 20px;
+        font-family: "Berkshire Swash",cursive;
+  display:block;
+  padding-bottom:0px;
+}
+
+.loginput[type=text],
+.loginput[type=password], #Comment {
+    color:#ffff99;
+ 	width:100%;
+  padding:8px 5px;
+  
+  background:linear-gradient(#999999, #666666);
+  border:1px solid #222;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.1);
+  border-radius:0.3em;
+  margin-bottom:10px;
+  margin-top:10px;
+  
+
+}
+.ddlist{
+    font-family:Satisfy, cursive;
+    font-size:17px;
+}
+ .loginput[type=text]:focus, .loginput[type=password]:focus{
+    box-shadow:1px 1px 4px 2px #fbaf00;
+    outline-color: #dceefc;
+    outline-offset: 0;
+  }
+  
+  #Comment{
+      font-size: 20px;
+      color: #00ff00;
+  }
+  
+  #Comment:focus{
+       box-shadow:1px 1px 4px 2px #FFFF66;
+    outline-color: #dceefc;
+    outline-offset: 0;
+  }
+
+.loginput[type=checkbox] {
+ 	display:inline-block;
+  vertical-align:top;
+  margin-top: 2px;
+}
+
+.p-container {
+ 	padding:0 20px 20px 20px; 
+}
+
+.p-container:after {
+ 	clear:both;
+  display:table;
+  content:"";
+}
+
+.p-container a {
+    color:darkred;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.loginput[type=submit] {
+ 	padding:5px 20px;
+  border:1px solid rgba(0,0,0,0.4);
+  text-shadow:0 -1px 0 rgba(0,0,0,0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 10px 10px rgba(255,255,255,0.1);
+  border-radius:0.3em;
+  background:#0184ff;
+  color:white;
+  float:right;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:13px;
+}
+
+.loginput[type=submit]:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -10px 10px rgba(255,255,255,0.1);
+}
+
+.loginput[type=text]:hover,
+.loginput[type=password]:hover,
+#loglabel:hover ~ .loginput[type=text],
+#loglabel:hover ~ .loginput[type=password] {
+    background:#7b7777;
+}
+
+
+#logmainboxlink:hover{background-color: #2a292a;}
+
+#sidecon{ width:625px; float: left; margin: 0;}
+#sidecon h2 { width:fill-available; text-align: center; margin-top: 0.5em; color:cyan; font-size: 35px; font-family:"Nothing You Could Do" ;text-shadow: 0px -1px 4px silver,0px -2px 7px violet,0px -5px 10px #33ffcc,0px -10px 15px red;}
+#sidebar{ float:right; margin: 0; width: 270px;}
+#sidebar ul{list-style: none;}
+#sidebar ul li{margin-top: 1.5em;}
+#sidebar ul li a {color:#ff3333; font-size: 2em; font-family:'Bad Script'; text-shadow: 0px 1px 1px  black, 2px 0px 3px gold;}
+#sidebar ul li a:hover{text-decoration: none; color:#ff9966;}
+#sidebar h2{font-size: 3.5em; color:#33ccff; text-align:center; font-family:'Swanky and Moo Moo'; margin-top: 0.5px; }
+
+
+
+#templatemo_wrapper {
+	width: 1010px;
+	margin: 0 auto;
+}
+
+#templatemo_main {
+        overflow-y: auto;
+        height: auto;
+	position:relative;
+        margin: 0.5em auto;
+	width: 900px;
+        box-shadow: 0 5px 15px 5px #65ff4f;
+	background-color: rgba(1,1,1,0.5);
+}
+
+#form1{
+    width:625px;
+    float:left;
+}
+
+
+#content-slider {
+	width:100%;
+	height:330px;
+      
+}
+.b{overflow: hidden;}
+#slider {
+	border:3px solid black;
+	box-shadow:5px 5px 8px rgba(255,255,255,0.8);
+	height:320px;
+	width:660px;
+	position:relative;
+}
+#mask {
+	overflow:hidden;
+	height:320px;
+}
+#slider ul {
+	margin:0;
+	padding:0;
+	position:relative;
+}
+#slider li {
+	width:660px;
+	height:320px;
+	position:absolute;
+	right:-325px;
+	list-style:none;
+}
+
+#slider li.firstanimation {
+	-moz-animation:cycle 25s linear infinite;	
+	-webkit-animation:cycle 25s linear infinite;		
+}
+#slider li.secondanimation {
+	-moz-animation:cycletwo 25s linear infinite;
+	-webkit-animation:cycletwo 25s linear infinite;		
+}
+#slider li.thirdanimation {
+	-moz-animation:cyclethree 25s linear infinite;
+	-webkit-animation:cyclethree 25s linear infinite;		
+}
+#slider li.fourthanimation {
+	-moz-animation:cyclefour 25s linear infinite;
+	-webkit-animation:cyclefour 25s linear infinite;		
+}
+#slider li.fifthanimation {
+	-moz-animation:cyclefive 25s linear infinite;
+	-webkit-animation:cyclefive 25s linear infinite;		
+}
+
+div.ex
+{
+ height:320px;
+width:fit-content;
+border:5px solid green;
+border-radius: 0.4em;
+margin:0px;
+float:right;
+
+}
+
+#leftpanel{
+    width:220px;
+padding:10px;
+border:5px green;
+border-radius: 0.4em;
+
+margin:0px;
+}
+.leftpaneltext{
+    font-family: "Shadows Into Light", cursive;
+    font-size: 40px;
+    text-align: justify;
+    padding-left: 30px;
+}
+#rightpanel{
+  
+width:500px;
+padding-top:15px;
+padding-left: 25px;
+padding-right:100px;
+padding-bottom: 25px;
+border:5px green;
+border-radius: 0.4em;
+margin:0px;
+float: right;
+}
+.rightpaneltext{
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+    text-align: justify;
+    padding-left: 0px;
+float:left;}
+.helpheading{
+    font-family: "Shadows Into Light", cursive;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 150px;
+    text-decoration:underline;
+    }
+  #faq p.q{
+        color:gold;
+        font-weight: bold;
+        font-size:24px;
+        
+    }
+#faq p{
+     font-family:"HelveticaNeue-Light" ;
+     margin: 10px;
+     font-size: 20px;
+     padding:5px;
+}
+.begin{;
+font-family:"Bad Script";
+font-size:22px;
+font-weight:bold;
+color:white;}
+.begin a{color:chocolate;
+font-weight: bold;}
+.begin a:hover{color:#0184ff;
+font-weight: bold;
+}
+.home
+{
+    padding:1.3em;
+    font-size:1.4em;
+    font-family:"Lucida Calligraphy";
+    text-align: justify;
+    color:gold;
+    font-weight:bold;
+}
+#feat
+{
+    color:white;
+    font-family:Berkshire Swash;font-size: 2.4em;padding-left:1em;
+text-shadow: 0px -1px 4px white,0px -2px 7px yellow,0px -5px 10px #ff8000,0px -10px 15px red;}
+.subhead
+{
+    font-size:1.5em;
+    font-family:"Algerian";
+    color:red;
+    font-weight:bold;
+    background-color:blueviolet;
+    border-radius:1em;
+    text-shadow: 0 0 5px #fff,
+                   0 0 10px #fff,
+                   0 0 15px #fff,
+                   0 0 20px #fff;
+}
+#nav ul{
+    background: white;
+    width:184px;
+    position:absolute;
+  left:-2500px;
+z-index: 4;
+}
+#nav ul li{
+    padding-top:1px; 
+    display:block;
+    }
+    #nav ul li a{font-size:12px;
+    font-family: "Lucida Calligraphy";
+    border-color:red;
+    }
+#nav li:hover ul{ 
+   left:700.5px;
+   top:210px;
+}
+#nav ul li:hover { 
+    background:#fff;
+    
+}
+
+#nav ul li a:hover{ 
+    background:#333;
+    text-align:left;
+    width:100%;
+}
+#nav ul ul{
+    background: white;
+    width:184px;
+    position:fixed;
+  left:-2600px;
+z-index:4;
+}
+#nav ul ul li{
+    padding-top:1px; 
+    display:block;
+    }
+    #nav ul ul li a{font-size:12px;
+    border-color:red;}
+    #nav li:hover ul ul{ 
+   left:-2600px;
+   
+}
+#nav li:hover ul li:hover ul{ 
+   left:885px;
+   top:259px;
+}
+#nav ul ul li:hover { 
+    background:#fff;
+    
+}
+
+#nav ul ul li a:hover{ 
+    background:#333;
+    text-align:left;
+    width:100%;
+}
+
+#maintable tr td{
+    padding-top: 30px;
+}
+
+.heading{background-color:#ffff33;
+color:green;
+font-size:18px;
+text-align:center;
+height:40px;
+font-family: "Lucida Calligraphy";
+}
+.low{font-size:14px;
+font-family: "Comic Sans MS";
+padding-left:5px;}
+.low .one{-moz-animation:one 10s linear infinite;
+	-webkit-animation:one 10s linear infinite;}
+.low .two{-moz-animation:one 10s linear infinite;
+	-webkit-animation:one 10s linear infinite;
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;}
+.low .three{-moz-animation:one 10s linear infinite;
+	-webkit-animation:one 10s linear infinite;
+-webkit-animation-delay: 4s;
+-moz-animation-delay: 4s;}
+.low .four{-moz-animation:one 10s linear infinite;
+	-webkit-animation:one 10s linear infinite;
+-webkit-animation-delay: 6s;
+-moz-animation-delay: 6s;}
+.low .five{-moz-animation:one 10s linear infinite;
+	-webkit-animation:one 10s linear infinite;
+-webkit-animation-delay: 8s;
+-moz-animation-delay: 8s;}
+
+#brtable tr th a {color:#ffcc00; text-decoration-line:underline;}
+#brtable tr th a:visited {color:#ffcc00;}
+#brtable tr th a:hover {text-decoration:none;}
+
+.begin h2 a{
+    color:red;
+ font-size:36px;
+font-family:"Berkshire Swash";
+-webkit-animation-name: shine;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+-moz-animation-name: shine;
+-moz-animation-duration: 1s;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction: alternate;
+}
+
+.begin h2 a:hover{
+    color:blue;
+ }
+
+.begin h2{text-align: center;}
+
+@-webkit-keyframes shine
+{
+0%
+{
+text-shadow: 0 0 5px #fff,
+                   0 0 10px #fff,
+                   0 0 20px #f00,
+}
+100%
+{
+text-shadow: 0 0 5px #fff,
+                   0 0 10px #fff,
+                   0 0 20px #f00,
+                   0 0 30px #f00;     
+}
+}
+@-moz-keyframes shine
+{
+0%
+{
+text-shadow: 0 0 5px #fff,
+                   0 0 10px #fff,
+                   0 0 20px #f00,
+}
+100%
+{
+text-shadow: 0 0 5px #fff,
+                   0 0 10px #fff,
+                   0 0 20px #f00,
+                   0 0 30px #f00;     
+}
+}
+
+@-moz-keyframes cycle {
+	0%  { right:0px; }
+	4%  { right:0px; } 
+	16% { right:0px; opacity:1;} 
+	20% { right:325px; opacity:0;} 
+	21% { right:-325px; opacity:0;}
+	92% { right:-325px; opacity:0;}
+	96% { right:-325px; opacity:0; }
+	100%{ right:0px; opacity:1; }
+	
+}
+@-moz-keyframes cycletwo {
+	0%  { right:-325px; opacity:0; }
+	16% { right:-325px; opacity:0; }
+	20% { right:0px; opacity:1; }
+	24% { right:0px; opacity:1; } 
+	36% { right:0px; opacity:1; } 
+	40% { right:325px; opacity:0; }
+	41% { right:-325px; opacity:0;} 
+	100%{ right:-325px; opacity:0;}
+}
+@-moz-keyframes cyclethree {
+	0%  { right:-325px; opacity:0; }
+	36% { right:-325px; opacity:0; }
+	40% { right:0px; opacity:1; }
+	44% { right:0px; opacity:1; } 
+	56% { right:0px; opacity:1; } 
+	60% { right:325px; opacity:0; }
+	61% { right:-325px; opacity:0;} 
+	100%{ right:-325px; opacity:0;}
+}
+@-moz-keyframes cyclefour {
+	0%  { right:-325px; opacity:0; }
+	56% { right:-325px; opacity:0; }
+	60% { right:0px; opacity:1; }
+	64% { right:0px; opacity:1; }
+	76% { right:0px; opacity:1;}
+	80% { right:325px; opacity:0;}
+	81% { right:-325px; opacity:0; }
+	100%{ right:-325px; opacity:0;}
+}
+@-moz-keyframes cyclefive {
+	0%  { right:-325px; opacity:0; }
+	76% { right:-325px; opacity:0; }
+	80% { right:0px; opacity:1; }
+	84% { right:0px; opacity:1; }
+	96% { right:0px; opacity:1;}
+	100%{ right:325px; opacity:0;}
+}
+
+@-webkit-keyframes cycle {
+	0%  { right:0px; }
+	4%  { right:0px; }
+	16% { right:0px; opacity:1;} 
+	20% { right:325px; opacity:0;}
+	21% { right:-325px; opacity:0;}
+	50% { right:-325px; opacity:0; }
+	92% { right:-325px; opacity:0; }
+	96% { right:-325px; opacity:0; }
+	100%{ right:0px; opacity:1; }
+	
+}
+@-webkit-keyframes cycletwo {
+	0%  { right:-325px; opacity:0; }
+	16% { right:-325px; opacity:0; }
+	20% { right:0px; opacity:1; }
+	24% { right:0px; opacity:1; } 
+	36% { right:0px; opacity:1;  } 
+	40% { right:325px; opacity:0; }
+	41% { right:-325px; opacity:0;  }  
+	100%{ right:-325px; opacity:0; }
+}
+@-webkit-keyframes cyclethree {
+	0%  { right:-325px; opacity:0; }
+	36% { right:-325px; opacity:0; }
+	40% { right:0px; opacity:1; }
+	44% { right:0px; opacity:1; } 
+	56% { right:0px; opacity:1;  } 
+	60% { right:325px; opacity:0;  } 
+	61% { right:-325px; opacity:0; }
+	100%{ right:-325px; opacity:0;  }
+}
+@-webkit-keyframes cyclefour {
+	0%  { right:-325px; opacity:0; }
+	56% { right:-325px; opacity:0; }
+	60% { right:0px; opacity:1; }
+	64% { right:0px; opacity:1; }
+	76% { right:0px; opacity:1;  }
+	80% { right:325px; opacity:0;  }
+	81% { right:-325px; opacity:0; }
+	100%{ right:-325px; opacity:0;  }
+}
+@-webkit-keyframes cyclefive {
+	0%  { right:-325px; opacity:0; }
+	76% { right:-325px; opacity:0; }
+	80% { right:0px; opacity:1; }
+	84% { right:0px; opacity:1; }
+	96% { right:0px; opacity:1;  }
+	100%{ right:325px; opacity:0; }
+}
+@-webkit-keyframes one
+{0%{opacity:1;}
+20%{opacity:0;}
+30%{opacity:0;}
+99%{opacity:0;}
+100%{opacity:0;}}
+
+@-moz-keyframes one
+{0%{opacity:1;}
+20%{opacity:0;}
+30%{opacity:0;}
+99%{opacity:0;}
+100%{opacity:0;}}
+
+
